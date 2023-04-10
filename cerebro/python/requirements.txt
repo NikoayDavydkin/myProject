@@ -1,0 +1,5 @@
+catboost>=1.0.5
+numpy>=1.22
+scikit-learn>=1.0
+# torch>=1.11
+orjson>=3.4.6,<4

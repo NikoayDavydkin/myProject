@@ -1,0 +1,372 @@
+
+  /*стили для основного контента*/
+
+  .content{
+    margin-top:150px;
+    display: flex;
+    height:fit-content;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  @media (min-width: 2211px){
+
+    .content{
+        width: 2497px;
+    }
+
+    .carts_products{
+        width: 2131px;
+    }
+
+ }
+
+  @media (min-width: 2211px) and (max-width: 2570px){
+
+    .content{
+        width: 2142px;
+    }
+
+    .carts_products{
+        width: 1776px;
+    }
+
+ }
+
+
+  @media (min-width: 1851px) and (max-width: 2210px){
+
+    .content{
+        width: 1787px;
+    }
+
+    .carts_products{
+        width: 1421px;
+    }
+
+ }
+
+ @media (min-width:1491px) and (max-width: 1850px){
+
+    .content{
+    width: 1432px;
+    }
+
+    .carts_products{
+        width: 1066px;
+    }
+
+ }
+
+ @media (min-width:1131px) and  (max-width:1490px){
+
+    .content{
+        width: 1077px;
+    }
+
+    .carts_products{
+        width: 711px;
+    }
+
+ }
+
+ @media (min-width:771px) and  (max-width:1130px){
+
+    .content{
+        width: 722px;
+    }
+
+    .carts_products{
+        width: 356px;
+    }
+
+ }
+
+ @media (max-width:770px){
+    .content{
+        width: 367px;
+    }
+
+    .carts_products{
+        width: 356px;
+    }
+
+    .filter_content{
+        display:none;
+    }
+
+ }
+
+
+  /*для filter*/
+
+  .filter_content{
+    margin-top: 5px;
+    width: 360px;
+    height: 900px;
+    background-color: #455061;
+    padding:15px;
+}
+
+.filter_content_title{
+    width:100%;
+    font-size: 25px;
+    color:white;
+}
+
+.input_filter{
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+.input_filter p{
+    color: white;
+    font-size: 15px;
+}
+
+/*для input filter со значениями*/
+
+.input_filter .button_input_g{
+    color: black;
+    padding-left: 10px;
+    width:100%;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    border:none;
+    font-size: 15px;
+    text-align: left;
+}
+
+.input_filter .button_input_g:hover{
+    border: 1px solid black;
+}
+
+
+.input_filter .button_input_g:active{
+    background-color: rgb(219, 211, 211);
+    
+}
+
+/*для кнопок input filter */
+
+.input_filter .buttons_inputs_active{
+    margin-top: 4px;
+    padding:0;
+    width:330px;
+    cursor: pointer;
+    text-align: left;  
+    z-index: 99;
+    position: absolute;
+}
+
+.input_filter .buttons_inputs_inactive{
+    display: none; 
+}
+
+.buttons_inputs_active .button_input{
+    border:none;
+    color: rgb(15, 11, 11);
+    padding-left: 10px;
+    width:100%;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: left;
+    z-index: 99;
+    
+}
+
+.buttons_inputs_active .button_input:hover{
+    background-color: rgb(218, 123, 14);
+    color: white;
+}
+
+
+.buttons_inputs_active input{
+    width:100%;
+    cursor: pointer;
+}
+
+
+/*для sliders*/
+
+.input_filter_slider{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.input_filter_slider p{
+    color: white;
+    font-size: 14px;
+}
+
+.filters_slider{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.input_filter_slider .noUi-connect{
+    background-color: rgb(218, 123, 14);
+}
+
+.input_filter_slider .noUi-target{
+    background-color: #bfbfbf;
+    border:none;
+    border-radius: 100px;
+    box-shadow: none;
+    height: 8px;
+}
+
+.input_filter_slider .noUi-handle::after{
+    display:none;
+    
+}
+
+.input_filter_slider .noUi-handle::before{
+    display:none;
+    
+}
+
+.input_filter_slider .noUi-handle{
+    box-shadow: none;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.input_filter_slider .noUi-horizontal .noUi-handle{
+    width: 22px;
+    height: 22px;
+    top: -7px;
+    cursor: pointer;
+}
+
+.input_filter_slider .noUi-horizontal .noUi-handle-upper{
+    right:0;
+}
+
+/*для карточек продуктов*/
+
+ .carts_products{
+    margin-left: 5px;
+    display: flex;
+    height:fit-content;
+    flex-wrap: wrap;
+  }
+
+  .cart_product{
+    padding:5px;
+    width: 355px;
+    height: 535px;
+}
+
+.cart_product_content{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    background-color: white;
+    border: 1px solid #6087ae;
+    padding: 10px;
+}
+
+.cart_product_content_for_img{
+    width:100%;
+    height:200px;
+    justify-content: center;
+}
+
+.cart_product_content_for_img img{
+    max-width: 325px;
+    max-height: 200px;
+    width:auto;
+    height:auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cart_product_content_span{
+    width:100%;
+    font-size: 14px;
+    font-weight: 700;
+    height: 70px;
+}
+
+.cart_product_content ul{
+    margin-top: 5px;
+    width:100%;
+    height:145px;
+}
+
+.cart_product_content li{
+    list-style: none;
+    cursor: default;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 14px;   
+}
+
+.price_product{
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 5px;
+}
+
+.price1{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.price2{
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.price2 a{
+    color:purple;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.view_on_ebay{
+    padding: 10px;
+    display: flex;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    bottom:0;
+}
+
+.view_on_ebay button{
+    border-radius: 30px;
+    border:none;
+    background-color: rgb(218, 123, 14); 
+    color: white;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    
+}
+
+.hover_info_active{
+    margin-left: 10px;
+    margin-top: 55px;
+    padding: 5px;
+    width: 300px;
+    height: 100px;
+    font-size: 11px;
+    color: white;
+    background-color: black;
+    position:absolute;
+    z-index: 99;
+    border-radius: 8px;
+}
+
+.hover_info_inactive{
+    display: none;
+}

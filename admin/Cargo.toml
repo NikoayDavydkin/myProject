@@ -1,0 +1,43 @@
+[package]
+name = "admin"
+version = "0.1.0"
+authors = ["Robert Nelson <robert@dealtech.com>"]
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+yew = "0.19"
+yew-router = "0.16"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.1", features = ["serde"] }
+pulldown-cmark = "0.9"
+gloo-console= "0.2"
+reqwest= { version = "0.11", features = ["json"] }
+wasm-bindgen-futures = "0.4"
+gloo-utils = "0.1"
+wasm-bindgen = "0.2"
+js-sys = "0.3"
+gloo-render = "0.1"
+gloo = "0.8"
+hashbrown = { version = "0.12", features = ["serde"] }
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  "MouseEvent",
+  "DomRect",
+  "Element",
+  'HtmlCanvasElement',
+  'WebGlBuffer',
+  'WebGlProgram',
+  'WebGlRenderingContext',
+  'WebGlShader',
+  'WebGlUniformLocation',
+  'HtmlSelectElement',
+]
+
+[profile.release]
+opt-level = "s"

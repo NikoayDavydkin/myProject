@@ -1,0 +1,48 @@
+.priceBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+
+  .price {
+    margin: 0px;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .updated {
+    margin: 0px;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+
+  .link {
+    margin: 0px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: blue;
+    border-bottom: 1px solid;
+    position: relative;
+
+    .tooltip {
+      visibility: hidden;
+      color: white;
+      background-color: black;
+      position: absolute;
+      z-index: 1;
+
+      border-radius: 6px;
+      padding: 2px 7px;
+
+      position: absolute;
+      width: 400px;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -200px;
+    }
+
+    &:hover .tooltip {
+      visibility: visible;
+    }
+  }
+}

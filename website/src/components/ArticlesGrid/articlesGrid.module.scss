@@ -1,0 +1,13 @@
+.grid {
+  display: flex;
+  margin-left: -20px;
+}
+.grid_item {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.grid_item > div {
+  background-color: #fff;
+  margin-bottom: 20px;
+}

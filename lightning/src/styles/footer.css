@@ -1,0 +1,27 @@
+
+
+/*для футера*/
+
+
+.footer{
+    width:100%;
+    background-color:rgb(6, 6, 7);
+    padding: 15px;
+}
+
+.footer .content_footer{
+    width:fit-content;
+    padding: 0px;
+    margin:auto;
+    display: flex;
+}
+
+.content_footer span{
+    color:white;
+}
+
+.content_footer img{
+    width:174px;
+    height: 25px;
+    
+}

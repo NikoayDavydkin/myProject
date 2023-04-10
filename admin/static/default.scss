@@ -1,0 +1,33 @@
+@use 'roboto';
+@use 'graph';
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+
+    .select-container {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .right {
+    margin-top: 25px;
+    font-size: 1.5em;
+
+    .cpu-specs {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+

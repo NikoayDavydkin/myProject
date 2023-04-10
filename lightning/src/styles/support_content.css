@@ -1,0 +1,107 @@
+
+.support_content{
+    margin-top: 300px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 500px;
+    height:200px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.support_name{
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.support_name h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.support_name p{
+    font-size: 15px;
+}
+
+.support_adress{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.support_adress a{
+   text-decoration: none;
+   color: rgb(230, 131, 39)
+}
+
+
+@media (max-width: 550px){
+
+    .support_content{
+        margin-top: 300px;
+        margin-left:auto;
+        margin-right:auto;
+        width: 350px;
+        height:150px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .support_name{
+        width: 100%;
+        height: 70px;
+        padding: 0;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .support_name h1{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .support_name p{
+        font-size: 12px;
+    }
+
+    .support_adress{
+        text-align: center;
+        padding-top: 0px;
+        font-size: 12px;
+    }
+    
+    .support_adress a{
+       text-decoration: none;
+       color: rgb(230, 131, 39)
+    }
+    
+}
+
+/*для footer*/
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color:rgb(6, 6, 7);
+    padding: 15px;
+}
+
+.footer .content_footer{
+    width:fit-content;
+    padding: 0px;
+    margin:auto;
+    display: flex;
+}
+
+.content_footer span{
+    color:white;
+}
+
+.content_footer img{
+    width:174px;
+    height: 25px;
+    
+}

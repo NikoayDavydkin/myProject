@@ -1,0 +1,10 @@
+pub mod operating_system_parser;
+pub mod parse_result;
+pub mod parser_trait;
+pub mod ram_aspect_parser;
+pub mod ram_parser;
+pub mod screen_resolution_parser;
+pub mod screen_size_parser;
+pub mod ssd_aspect_parser;
+pub mod storage_capacity_parser;
+pub mod storage_parser;

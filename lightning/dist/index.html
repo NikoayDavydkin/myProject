@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head>
+        
+        
+        
+         
+        <link rel="icon" href=".src/img/favicon.ico">      
+        <meta name="theme-color" content="#b9d7ef">
+        <link rel="apple-touch-icon" sizes="180x180" href="./src/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon-32x32.png">
+        <link rel="mask-icon" href="./src/img/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-tilecolor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>DealTech | Search for Laptops, Computers, and Parts</title>
+        <meta name="description" content="Search for Laptops, Computers, and Parts">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="./src/styles/nouislider.min.css">
+        <link rel="icon" href=".src/favicon.ico" type="image/x-icon">
+        <script src="./src/js/nouislider.min.js"></script>
+        
+        
+        
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+           
+           
+            *{
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+            }
+
+            body{
+              width: 100%;
+              background: #b9d7ef;
+            }
+        </style>
+    
+<link rel="preload" href="/lightning-4f763a04a23d85e2_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/lightning-4f763a04a23d85e2.js"></head>
+    <body>
+        
+      
+    
+<script type="module">import init from '/lightning-4f763a04a23d85e2.js';init('/lightning-4f763a04a23d85e2_bg.wasm');</script><script>(function () {
+    var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    var url = protocol + '//' + window.location.host + '/_trunk/ws';
+    var poll_interval = 5000;
+    var reload_upon_connect = () => {
+        window.setTimeout(
+            () => {
+                // when we successfully reconnect, we'll force a
+                // reload (since we presumably lost connection to
+                // trunk due to it being killed, so it will have
+                // rebuilt on restart)
+                var ws = new WebSocket(url);
+                ws.onopen = () => window.location.reload();
+                ws.onclose = reload_upon_connect;
+            },
+            poll_interval);
+    };
+
+    var ws = new WebSocket(url);
+    ws.onmessage = (ev) => {
+        const msg = JSON.parse(ev.data);
+        if (msg.reload) {
+            window.location.reload();
+        }
+    };
+    ws.onclose = reload_upon_connect;
+})()
+</script></body></html>

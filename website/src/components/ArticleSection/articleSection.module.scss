@@ -1,0 +1,147 @@
+.videoBox {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  margin-bottom: 2.5rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  @media (max-width: 850px) {
+    height: 40vh;
+  }
+  @media (max-width: 650px) {
+    height: 30vh;
+  }
+}
+
+.player {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.detailBox {
+  padding: 2rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  @media screen and (max-width: 650px) {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  @media screen and (max-width: 450px) {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  img {
+    margin-bottom: 0.8rem;
+    @media screen and (max-width: 650px) {
+      margin-bottom: 0.6rem;
+    }
+    @media screen and (max-width: 450px) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .source {
+    font-size: 14px;
+
+    a:link,
+    a:active,
+    a:visited {
+      text-decoration: none;
+      color: #487cef;
+    }
+    a:hover {
+      color: #e2641e;
+    }
+
+    @media screen and (max-width: 380px) {
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: 10px;
+    }
+  }
+}
+
+.titleBox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  img {
+    margin-right: 1.5rem;
+    @media screen and (max-width: 750px) {
+      width: 3.5rem;
+    }
+    @media screen and (max-width: 650px) {
+      width: 3.2rem;
+    }
+    @media screen and (max-width: 450px) {
+      width: 3rem;
+    }
+  }
+}
+
+.secondryHeading {
+  font-size: 3rem;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-align: center;
+  @media screen and (max-width: 750px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 2.2rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+.thirdHeading {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 400;
+  text-align: left;
+  @media screen and (max-width: 750px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 1.2rem;
+  }
+}
+
+.articleUl{
+  margin-left:30px;
+}
+
+.body {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 300;
+  line-height: 180%;
+  @media screen and (max-width: 750px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+  }
+}
+
+.prosConsBox {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 300;
+  line-height: 180%;
+  margin: 0;
+  padding-bottom: 5px;
+}

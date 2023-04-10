@@ -1,0 +1,506 @@
+/*для 1 страницы */
+
+/* для главного блока */
+.wrapper_home{
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  
+  
+  /* для header */
+  .wrapper_home header{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  /* для inputField */
+  
+  .wrapper_home .set_todo_field{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+  }
+
+  .set_todo_field input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+  }
+  .set_todo_field input:focus{
+    border-color: #8E49E8;
+  }
+  
+  .set_todo_field button{
+    width: 50px;
+    height: 100%;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 21px;
+    outline: none;
+    background: #8E49E8;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .set_todo_field button.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .set_todo_field button:hover{
+    background: #721ce3;
+  }
+  
+  /* для todoList */
+  
+  .wrapper_home .todoList{
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  .todoList li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: default;
+    overflow: hidden;
+    word-wrap: break-word;
+    display: flex;
+  }
+
+  .colored_dot_small_none{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px ;
+    margin-top: 5px;
+  
+  }
+
+  .colored_dot_small_easy{
+    width: 15px;
+    height: 15px;
+    background-color: #30f029;
+    border-radius: 10px ;
+    margin-top: 5px;
+  
+  }
+
+  .colored_dot_small_medium{
+    width: 15px;
+    height: 15px;
+    background-color: #c7d40f;
+    border-radius: 10px ;
+    margin-top: 5px;
+  
+  }
+
+  .colored_dot_small_hard{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 10px ;
+    margin-top: 5px;
+  
+  }
+  
+  
+  .todoList li a{
+    text-decoration: none;
+    color: #000000;
+    margin-left: 5px;
+  }
+  .todoList li .icon{
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .todoList li:hover .icon{
+    right: 0px;
+  }
+  
+  /* для footer */
+  
+  .footer button:hover{
+    background: #721ce3;
+  }
+  
+  .wrapper_home .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer button{
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: #8E49E8;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+  }
+  .footer button.active{
+    opacity: 1;
+  }
+
+/*для 2 страницы */
+
+/* для главного блока */
+.wrapper_issue{
+  background: #fff;
+  max-width: 800px;
+  width: 100%;
+  margin: 120px auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+
+/*для цветной точки */
+
+.colored_dot_big_none{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px ;
+  margin-top: 15px;
+}
+
+.colored_dot_big_easy{
+  width: 30px;
+  height: 30px;
+  background-color: #30f029;
+  border-radius: 20px ;
+  margin-top: 15px;
+}
+
+.colored_dot_big_medium{
+  width: 30px;
+  height: 30px;
+  background-color:#c7d40f;
+  border-radius: 20px ;
+  margin-top: 15px;
+
+}
+
+.colored_dot_big_hard{
+  width: 30px;
+  height: 30px;
+  background-color:red;
+  border-radius: 20px ;
+  margin-top: 15px;
+
+}
+
+/* для title */
+.title_issue{
+  font-size: 30px;
+  font-weight: 600;
+  max-height: 250px;
+  overflow-y: auto;
+  position: relative;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.dot_and_title_issue{
+  display: flex;
+}
+
+/*для поля description */
+
+ .name_issue_fields{
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-left: 8px;
+}
+
+ .description_issue{
+  max-height: 250px;
+  overflow-y: auto;
+  position: relative;
+  list-style: none;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 3px  ;
+  border: 1px solid #721ce3;
+  padding: 10px 15px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+/* для footer */
+
+.wrapper_issue .footer_issue{
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  height: 45px;
+  position: relative;
+}
+
+.right_issue{
+  display: flex;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.footer_issue .name_buttons_issue  {
+  padding-top: 10px;
+  width: 60px;
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 5px;
+  
+}
+
+.footer_issue button{
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 21px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+
+.footer_issue button:hover{
+  opacity: 1;
+}
+
+.footer_issue button:active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#edit{
+  background: #c7d40f;
+}
+
+#home{
+  background: #e98b11;
+}
+
+#edit a{
+  color: #fff;
+}
+
+#home a{
+  color: #fff;
+}
+
+/*для страницы redaction*/
+
+/* для главного блока */
+.wrapper_redaction{
+  background: #fff;
+  max-width: 600px;
+  width: 100%;
+  margin: 120px auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+
+/*для полей redaction*/
+
+.name_redaction_fields{
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.text_redaction_fields{
+width: 100%;
+height: 45px;
+outline: none;
+border-radius: 3px;
+border: 1px solid #8E49E8;
+font-size: 17px;
+padding-left: 15px;
+transition: all 0.3s ease;
+background: #f2f2f2;
+}
+
+.text_redaction_fields_errors{
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #f30707;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+  background: #f2f2f2;
+  }
+
+  .errors_text{
+    color:#f30707;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .errors_text_none{
+    color:white;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+.description_redaction_fields{
+  width: 100%;
+  height: 200px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #8E49E8;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+  background: #f2f2f2;
+  resize: none;
+  }
+
+  /* Современные браузеры
+   ----------------------------  */
+   .description_redaction_fields::placeholder {color: #000000;}
+   .text_redaction_fields::placeholder {color: #000000;}
+
+   /* WebKit, Edge
+      ----------------------------  */
+   .description_redaction_fields::-webkit-input-placeholder {color: #000000;}
+   .text_redaction_fields::-webkit-input-placeholder {color: #000000;}
+   /* Edge
+      ----------------------------  */
+   .description_redaction_fields::-ms-input-placeholder {color: #000000;}
+   .text_redaction_fields::-ms-input-placeholder {color: #000000;}
+   /* Firefox 4-18
+      ----------------------------  */
+    .description_redaction_fields:-moz-placeholder {color: #000000;opacity: 1;}
+    .text_redaction_fields:-moz-placeholder {color: #000000;opacity: 1;}
+   /* Firefox 19+
+      ----------------------------  */
+   .description_redaction_fields::-moz-placeholder {color: #000000;opacity: 1;}
+   .text_redaction_fields::-moz-placeholder {color: #000000;opacity: 1;}
+   /* IE 10-11
+      ----------------------------  */
+   .description_redaction_fields:-ms-input-placeholder {color: #000000;}
+   .text_redaction_fields:-ms-input-placeholder {color: #000000;}
+
+.text_redaction_fields:focus{
+  border-color: #e29403;
+  }
+
+.description_redaction_fields:focus{
+    border-color: #e29403;
+  }
+
+
+/* для footer redaction */
+
+.wrapper_redaction .footer_issue_redaction{
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  height: 47px;
+  position: relative;
+}
+
+ .name_buttons_redaction {
+  padding-top: 10px;
+  width: 60px;
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 5px;
+  
+}
+
+.right_redaction{
+  display: flex;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+#exit_redaction{
+  background: #d32f06;
+}
+
+#save_redaction{
+  background: #30f029;
+}
+
+
+.footer_issue_redaction button{
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 21px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.footer_issue_redaction button:active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer_issue_redaction button:hover{
+  opacity: 1;
+}

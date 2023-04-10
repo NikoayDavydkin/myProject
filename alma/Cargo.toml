@@ -1,0 +1,33 @@
+[package]
+name = "alma"
+version = "0.1.0"
+authors = ["Robert Nelson <robert@dealtech.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hashbrown = { version = "0.12", features = ["serde"] }
+warp= "0.3"
+async-graphql = { version = "4", features = ["uuid"] }
+async-graphql-warp = "4"
+uuid = { version = "1.1", features = ["serde", "v4", "v5"] }
+tokio = { version = "1", features = ["full"] }
+maplit = "1"
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+literal = "0.2"
+regex = "1.5"
+serde = { version = "1", features = ["derive"] }
+lazy_static = "1.4"
+anyhow = "1"
+serde_derive = "1"
+reqwest = "0.11"
+
+bonfire-ids = { git = "ssh://git@git.dealtech.com:/dealtech/bonfire-ids.git" }
+
+bonfire-core = { git = "ssh://git@git.dealtech.com:/dealtech/bonfire-core.git" }
+# bonfire-core = { path = "../bonfire-core" }
+
+product-parser = { git = "ssh://git@git.dealtech.com:/dealtech/product-parser.git" }
+# product-parser = { path = "../product-parser" }

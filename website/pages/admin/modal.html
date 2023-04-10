@@ -1,0 +1,53 @@
+<html>
+  <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+  <h1>Add/Edit Regex</h1>
+  <table class="main-table">
+    <tr>
+      <th>ID</th>
+      <td>0207bf42-17bf-46a3-a98c-48312fe814de</td>
+      <td colspan=2/>
+    </tr>
+    <tr>
+      <th colspan=4>Fields:</th>
+    </tr>
+    <tr>
+      <th>name</th>
+      <th>regex</th>
+      <th>replacement</th>
+      <th/>
+    </tr>
+    <tr>
+      <th>cpuBrand</th>
+      <th>Intel</th>
+      <th></th>
+      <th>Move Up/Down Delete</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Core</th>
+      <th></th>
+      <th>Move Up/Down Delete</th>
+    </tr>
+    <tr>
+      <th>cpuModel</th>
+      <th>(i\\d+) U (\\d\\d\\d)</th>
+      <th>$1-$2UM</th>
+      <th>Move Up/Down Delete</th>
+    </tr>
+    <tr>
+      <th colspan=4>Add</th>
+    </tr>
+  </table>
+</html>
